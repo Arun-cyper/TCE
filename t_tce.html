@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--
+<div class="container">
+  <h2>Vertical Button Group with Dropdown</h2>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Sony
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Tablet</a>
+        <a class="dropdown-item" href="#">Smartphone</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+<section>
+  <form action="htpps://www.google.com" class="mx-auto was-validated bg-light shadow" style="width: 500px; border-radius: 20px;" >
+    <div class="form-group px-4 my-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" placeholder="Email" value="red" name="none" id="email" required>
+      <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+    </div>
+    <div class="form-group px-4 mb-3">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" placeholder="password" name="none" id="pwd" required >
+      <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+    </div>
+    <div class="form-group px-4 mb-3">
+      <label for="nme">Name</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">First Name</span>
+        </div>
+        <input type="password" class="form-control form-control-lg" placeholder="password" name="none" id="pwd" required>
+        
+        <div class="input-group-append">
+          <span class="input-group-text">End.</span>
+        </div>
+      </div> 
+      </div>
+      <div class="form-group pb-3 px-4">
+        <label for="rdo">
+          <input type="radio" name="rdo" id="rdo" value="RAD" required>  RAD
+        </label><br>
+        <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+        <label for="io">
+          <input type="radio" name="rdo" id="io" value="IO" required>  IO
+        </label>
+        <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+        <div class="form-group mx-4">
+        <label class="form-check-label" for="ra">
+          <input type="checkbox"  class="form-check-input" id="ra" value="IO" required>  O
+        </label>
+        <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+      </div>
+      <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+      </div>
+      <div class="form-group px-4 pb-3">
+        <input type="range" class="form-control-range " >
+      </div>
+      <div class="form-group px-4 pb-3">
+        <input type="file" class="form-control-file" required >
+        <div class="valid-feedback">Correct</div>
+      <div class="invalid-feedback">Incorrect</div>
+      </div>
+      <textarea name="tarea" id="tarea" class="px-4 form-control" cols="1" rows="1"></textarea>
+      <button type="submit" class="btn btn-block btn-primary mb-4">Submit</button>
+  </form>
+</section>
+<section class="p-5 ">
+   <a href="#" type="tooltip" class="tootip" title="head" data-content="dfsdfs" data-toggle="tooltip" >sdfsdfsd</a>
+   <a  data-toggle="popover" title="head" class="btn btn-primary d-inline-flex justify-content-center align-items-center " style="width:150px;height:140px" data-content="dsflksjafsdfjsdlkfjflksdk">
+      Iam pop over;</a>
+   <div class="toast mx-auto" data-autohide="false" >
+     <div class="toast-header ">
+       <div>sdlkjflsdjlsdlk</div> <button class="ml-auto btn close"data-dismiss="toast" >&times;</button>
+     </div>
+     <div class="toast-body">
+       sld';lsdflsd';fs'
+   </div>
+   </div>
+   <button class="btn btn-primary" onClick="model_call();" >Modal Show!</button>
+</section>
+<section style="height: 400px;background-color: rgb(46, 46, 46);">
+  <div class="modal fade">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header clearfix ">
+          <h4>ldksfjksdl</h4> <span class="close float-right" data-dismiss="modal" >&times;</span>
+        </div>
+        <div class="modal-body">
+          sdlkfjsdlkjfsdlkjsdlk
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione laudantium aliquam illo odit delectus nemo quibusdam aut laborum quia pariatur.
+
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <h5 class="text-left float-left" >lsdfjsldjflsdk</h5> <button class="btn btn-danger" data-miss="modal" >Close </button>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <button class="btn  ml-5 rounded-pill text-center" style="width:150px;border-width: 2px;font-size: 18px;"> Buy </button>
+  <div class="dropdown btn-group rounded-0">
+    <button class="btn  bg-primary text-light ">sdflkds</button>
+    <button class="btn btn-primary disabled">sdflkds</button>
+    <button class="btn btn-primary">sdflkds</button>
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"  >sdflkds</button>
+    <div class="dropdown-menu rounded-0 bg-dark" style="color:white;">
+      <a href="" class="dropdown-item">1</a>
+      <a href="" class="dropdown-item">1</a>
+      <a href="" class="dropdown-item">1</a>
+      <div class="dropdown-divider" style="border-width: 20px;"></div>
+      <a href="" class="dropdown-item">1</a>
+    </div>
+  </div>
+</section>
+<script>
+  $(document).ready(() =>{
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.toast').toast('show');
+    $('[data-toggle="popover"]').popover();
+    
+  }
+  );
+  function model_call() {
+    $('.modal').modal("toggle");
+  }
+  </script>
+</body>
+</html>
